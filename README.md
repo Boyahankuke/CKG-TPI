@@ -18,8 +18,8 @@ All the data used in the paper were collected from public databases: VDJdb, McAP
 # Usage of CKG-TPI
 Data Preparation:
 Prepare the train dataset (https://drive.google.com/drive/folders/1aiqrhqks2sAXgXz2HROgQyvxlEsWNGF_?usp=sharing) in <BASE_FOLDER>/data/.
-Move data folder into <BASE_FOLDER>/datasets/
-Before training with VDJdb, McPAS or IEDB dataset, please move all the files in corresponding <dataset>_train_data (VDJdb_train_data, McPAS_train_data or IEDB_train_data) into <BASE_FOLDER>/datasets/
+Move data folder into <BASE_FOLDER>/datasets/.
+Before training with VDJdb, McPAS or IEDB dataset, please move all the files in corresponding <dataset>_train_data (VDJdb_train_data, McPAS_train_data or IEDB_train_data) into <BASE_FOLDER>/datasets/.
 The preprocessing steps for the original data of each dataset can be found in the "Data preprocessing" section of the supplementary materials of the article.
 
 Training CKG-TPI with VDJdb dataset on Random split strategy:
