@@ -20,7 +20,7 @@ Data Preparation:
 Prepare the train dataset (https://drive.google.com/drive/folders/1aiqrhqks2sAXgXz2HROgQyvxlEsWNGF_?usp=sharing) in <BASE_FOLDER>/data/.
 Move data folder into <BASE_FOLDER>/datasets/
 Before training with VDJdb, McPAS or IEDB dataset, please move all the files in corresponding <dataset>_train_data (VDJdb_train_data, McPAS_train_data or IEDB_train_data) into <BASE_FOLDER>/datasets/
-
+The preprocessing steps for the original data of each dataset can be found in the "Data preprocessing" section of the supplementary materials of the article.
 
 Training CKG-TPI with VDJdb dataset on Random split strategy:
 ```
@@ -46,4 +46,27 @@ Training CKG-TPI with IEDB dataset on Strict split strategy:
 ```
 python main_kgat.py --dataset_name "IEDB" --split_name "Strict" --fold 0 --device_id 0 --n_epoch 20
 ```
+
+The exact parameters used for model training and evaluation are as follows:
+Module_name	Model Parameter	Value
+Embedding	Entity embedding size	512
+	Relation embedding size	64
+Graph propagation module	Layers number	3
+	Output sizes for every aggregation layer	[256, 128, 64]
+	Message dropout for each aggregation layer	[0.2, 0.2, 0.2]
+Interaction module	Embedding size for sequence	256
+	Transformer encoder layers number	2
+	Transformer encoder hidden size	256
+	Transformer encoder intermediate size	1536
+	Transformer encoder attention heads number	8
+	Transformer encoder attention dropout probability	0.1
+	Transformer encoder hidden dropout probability	0.1
+	Interaction module output dimension	960
+Training parameters	Weight of gepre (λ)	1e-5
+	Epoch	50
+	Batch size	128
+	Learning rate	1e-4
+![image](https://github.com/user-attachments/assets/f7eb23b8-ad7e-4b8c-8489-712eb717885f)
+
+
 
