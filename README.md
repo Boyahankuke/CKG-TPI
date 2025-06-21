@@ -48,7 +48,8 @@ python main_kgat.py --dataset_name "IEDB" --split_name "Strict" --fold 0 --devic
 ```
 
 The exact parameters used for model training and evaluation are as follows:
-![image](https://github.com/user-attachments/assets/f7eb23b8-ad7e-4b8c-8489-712eb717885f)
+![image](https://github.com/user-attachments/assets/4c66fc63-10ce-49af-b639-51081700f508)
+
 
 
 
