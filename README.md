@@ -2,7 +2,7 @@
 CKG-TPI is a novel graph neural network-based approach for predicting TCR-peptide binding specificity. This method constructs a collaborative knowledge graph (CKG) that integrates peptide and TCR amino acid sequences along with their biological context.
 
 # Dependencies
-CKG-TPI is writen in Python based on Pytorch. The required software dependencies are listed below:
+CKG-TPI is writen in Python (python 3.8) based on Pytorch. The required software dependencies are listed below:
 ```
 torch
 tqdm
@@ -17,9 +17,14 @@ All the data used in the paper were collected from public databases: VDJdb, McAP
 
 # Usage of CKG-TPI
 Data Preparation:
-Prepare the train dataset (https://drive.google.com/drive/folders/1aiqrhqks2sAXgXz2HROgQyvxlEsWNGF_?usp=sharing) in <BASE_FOLDER>/data/.
-Move data folder into <BASE_FOLDER>/datasets/.
-Before training with VDJdb, McPAS or IEDB dataset, please move all the files in corresponding <dataset>_train_data (VDJdb_train_data, McPAS_train_data or IEDB_train_data) into <BASE_FOLDER>/datasets/.
+
+# Please create file directory ./datasets/KG_data
+# KG_data contain all the preprocessed data for training (contrusted knowledge graph and TCR-epitope binding data)
+
+Download the training dataset (TCR-epitope binding dataset) (https://drive.google.com/drive/folders/1aiqrhqks2sAXgXz2HROgQyvxlEsWNGF_?usp=sharing) in data.
+Move data folder into <BASE_FOLDER>/datasets/KG_data.
+
+Before training with VDJdb, McPAS or IEDB dataset, Please move all the files (contrusted knowledge graph) in corresponding <dataset>_train_data (VDJdb_train_data, McPAS_train_data or IEDB_train_data) (https://drive.google.com/drive/folders/1aiqrhqks2sAXgXz2HROgQyvxlEsWNGF_?usp=sharing) into <BASE_FOLDER>/datasets/KG_data/
 The preprocessing steps for the original data of each dataset can be found in the "Data preprocessing" section of the supplementary materials of the article.
 
 Training CKG-TPI with VDJdb dataset on Random split strategy:
