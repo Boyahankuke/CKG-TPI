@@ -23,6 +23,7 @@ Download the training dataset (TCR-epitope binding dataset) (https://drive.googl
 Move data folder into <BASE_FOLDER>/datasets/KG_data.
 
 Before training with VDJdb, McPAS or IEDB dataset, Please move all the files (contrusted knowledge graph) in corresponding <dataset>_train_data (VDJdb_train_data, McPAS_train_data or IEDB_train_data) (https://drive.google.com/drive/folders/1aiqrhqks2sAXgXz2HROgQyvxlEsWNGF_?usp=sharing) into <BASE_FOLDER>/datasets/KG_data/
+
 The preprocessing steps for the original data of each dataset can be found in the "Data preprocessing" section of the supplementary materials of the article.
 
 Training CKG-TPI with VDJdb dataset on Random split strategy:
