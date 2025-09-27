@@ -16,7 +16,6 @@ libauc
 All the data used in the paper were collected from public databases: VDJdb, McAPS-TCR, and IEDB.
 
 # Usage of CKG-TPI
-Data Preparation:
 
 # Please create file directory ./datasets/KG_data
 # KG_data contain all the preprocessed data for training (contrusted knowledge graph and TCR-epitope binding data)
