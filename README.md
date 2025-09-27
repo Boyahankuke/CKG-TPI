@@ -17,7 +17,7 @@ All the data used in the paper were collected from public databases: VDJdb, McAP
 
 # Usage of CKG-TPI
 
-Please create file directory ./datasets/KG_data, KG_data contains all the preprocessed data for training (contrusted knowledge graph and TCR-epitope binding data)
+Please create file directory ./datasets/KG_data, KG_data contains all the preprocessed data for training (contrusted knowledge graph and TCR-epitope binding data).
 
 Download the training dataset (TCR-epitope binding dataset) (https://drive.google.com/drive/folders/1aiqrhqks2sAXgXz2HROgQyvxlEsWNGF_?usp=sharing) in data.
 Move data folder into <BASE_FOLDER>/datasets/KG_data.
